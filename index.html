@@ -14,38 +14,203 @@
     <link rel="stylesheet" href="style.css" />
     <title>Abdu</title>
   </head>
-  <body>
+  <body class="light" id="top">
     <header class="header center">
-        <h3>
-          <a class="link link--name" href="#">Abdu</a>
-        </h3>
-  
-        <nav class="nav center">
-          <ul class="nav__list center">
-            <li class="nav__list-item">
-              <a class="link link--nav" href="#projects">Projects</a>
-            </li>
-            <li class="nav__list-item">
-              <a class="link link--nav" href="#skills">Skills</a>
-            </li>
-            <li class="nav__list-item">
-              <a class="link link--nav" href="#contact">Contact</a>
-            </li>
-          </ul>
-  
-          <button type="button" aria-label="toggle theme" class="btn btn--icon">
-            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-          </button>
-  
-          <button
-            type="button"
-            aria-label="toggle navigation"
-            class="btn btn--icon nav__hamburger"
+      <h3>
+        <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
+          >RS.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Abdulwahid Hussen.</span></h1>
+        <h2 class="about__role">A Programmer.</h2>
+        <p class="about__desc">
+          I am a self-motivated, adaptive problem solver with a collaborative mindset. I thrive on finding innovative solutions and leveraging collective strengths for success. With a beneficiary approach, I deliver high-quality results in dynamic programming environments.
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://example.com">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/rajshekhar26"
+            aria-label="github"
+            class="link link--icon"
           >
-            <i aria-hidden="true" class="fas fa-bars"></i>
-          </button>
-        </nav>
-      </header>
-  
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/rajshekhar26"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Quiz me</h3>
+            <p class="project__description">
+              a project that use generative AI to change learning materials into interactive quiz.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Django</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">Javascript</li>
+            </ul>
+
+            <a
+              href="https://github.com/AbdulwahidHusein/A2SVGenerativeAi"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Youtube Downloader</h3>
+            <p class="project__description">
+              A project that downloads any youtube videos.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com/AbdulwahidHusein/Video-downloader"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Wheather app</h3>
+            <p class="project__description">
+              A project that shows wheather of any city.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">Competitive Programming</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">django</li>
+          <li class="skills__list-item btn btn--plain">APIs</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:abdulwahid.hussen@a2sv.org">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="#"
+        class="link footer__link"
+      >
+      Contact me
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
-  </html>
+</html>
