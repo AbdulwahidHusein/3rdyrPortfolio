@@ -31,5 +31,22 @@ const toggleTheme = () =>
 
 btnTheme.addEventListener('click', toggleTheme)
 
+function ShowProjectDialogue(title, text, image, github, web){
 
+		document.getElementById("pr-d").style.display = "block"
+		document.getElementById("pr-d-title").textContent = title;
+		document.getElementById("prd-image").src = image;
+		document.getElementById("prd-text").textContent = text;
+		document.getElementById("github-link").href = github;
+		document.getElementById("web-link").href = web;
+
+		document.getElementById("close-dialogue").addEventListener("click",
+			(e) =>{
+				document.getElementById("pr-d").style.display = "none"
+			}
+		)
+
+	
+
+}
 

@@ -18,7 +18,7 @@
     <header class="header center">
       <h3>
         <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
-          >RS.</a
+          >Abdu</a
         >
       </h3>
 
@@ -48,7 +48,7 @@
         </button>
       </nav>
     </header>
-
+    <div class="separator"></div>
     <main>
       <!-- About -->
       <div class="about center">
@@ -85,86 +85,43 @@
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
-        <div class="projects__grid">
-          <div class="project">
+        <div  class="projects__grid">
+          <div onclick="ShowProjectDialogue('QuizMe','Quiz Me is a web-based application and Telegram bot that harnesses the power of generative AI to transform educational materials into engaging and interactive quizzes. It not only converts the content but also tracks students  progress and delivers personalized learning experiences. Additionally, Quiz Me supports competitive learning by enabling users to participate in quizzes and view scoreboards to gauge their performance relative to others.', 'quizme.png', 'https://github.com/AbdulwahidHusein/A2SVGenerativeAi','https://web.com')" class="project">
             <h3>Quiz me</h3>
+            <img clss="project-image" src="quizme.png" alt="" class="project__img" />
             <p class="project__description">
-              a project that use generative AI to change learning materials into interactive quiz.
-            </p>
+              </p>
             <ul class="project__stack">
               <li class="project__stack-item">Django</li>
               <li class="project__stack-item">HTML</li>
               <li class="project__stack-item">Javascript</li>
             </ul>
-
-            <a
-              href="https://github.com/AbdulwahidHusein/A2SVGenerativeAi"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
           </div>
 
-          <div class="project">
+          <div onclick="ShowProjectDialogue('Youtube Downloader','a react app. given the url of a video it allows the user to download the video in to local storage.', 'yd.png', 'https://github.com/AbdulwahidHusein/Video-downloader','https://starlit-beijinho-6120f3.netlify.app/')" 
+          class="project">
             <h3>Youtube Downloader</h3>
+            <img clss="project-image" src="yd.png" alt="" class="project__img" />
             <p class="project__description">
-              A project that downloads any youtube videos.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">SASS</li>
               <li class="project__stack-item">TypeScript</li>
               <li class="project__stack-item">React</li>
             </ul>
-
-            <a
-              href="https://github.com/AbdulwahidHusein/Video-downloader"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
           </div>
 
-          <div class="project">
-            <h3>Wheather app</h3>
+          <div onclick="ShowProjectDialogue('Youtube Clone', 'This project effectively utilizes the Rapid API to fetch YouTube videos, while being built using the ReactJS framework and Material UI. The integration of Rapid API seamlessly facilitates the retrieval and fetching of YouTube videos, enhancing the projects functionality and versatility. Developed with ReactJS, the project benefits from its dynamic content updates and efficient rendering, ensuring a smooth and interactive video browsing experience. The implementation of Material UI adds a touch of elegance and visual appeal to the project, with its sleek design and responsive layout.', 'yc.png', 'https://github.com/AbdulwahidHussien/YoutubeClone', 'https://symphonious-babka-1c4d6c.netlify.app/')"
+          class="project">
+            <h3>Youtube Clone</h3>
+            <img clss="project-image" src="yc.png" alt="" class="project__img" />
             <p class="project__description">
-              A project that shows wheather of any city.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">SASS</li>
               <li class="project__stack-item">TypeScript</li>
               <li class="project__stack-item">React</li>
             </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
           </div>
         </div>
       </section>
@@ -210,7 +167,30 @@
       </a>
     </div>
     </div>
-
     <script src="./index.js"></script>
+    <div id="prd-p">
+    <div id="pr-d" >
+      <div id="close-dialogue">X</div>
+      <p id="pr-d-title"></p>
+      <img alt="" id="prd-image" />
+      <p id="prd-text" ></p>
+      <div class="prd-links">
+        <a id="github-link" 
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+            id="web-link"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+      </div>
+      </div>
+    </div>
+    </body>
   </body>
 </html>
