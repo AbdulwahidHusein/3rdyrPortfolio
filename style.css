@@ -1,17 +1,4 @@
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -143,6 +130,7 @@ button {
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  border-bottom: 5px solid var(--clr-primary);
 }
 
 main {
